@@ -1,0 +1,130 @@
+<html>
+	<head>
+		<title>View Attendence</title>
+		<style>
+			body
+			{
+				font-size:26px;
+				background-image:url(tsp.jpg);
+				background-size:200px 200px;
+				background-repeat:no-repeat;
+				background-position:center top;
+			}
+			#tit
+			{
+				color:#8B008B;
+				font-family:"ar julian";
+				margin-left:470px;
+				font-size:48px;
+				font-style:"bold";
+				margin-bottom:100px;
+			}
+			#btn1
+			{
+				margin-left:1240px;
+				font-size:24px;
+				margin-bottom:50px;
+			}
+			#l1
+			{
+				margin-left:100px;
+				margin-bottom:100px;
+				font-size:24pt;
+				float:left;
+				spacing:29px;
+				line-height:70px;
+				align:center;
+			}
+			#l2
+			{
+				margin-left:130px;
+				font-size:24pt;
+				float:left;
+				spacing:29px;
+				line-height:75px;
+				align:center;
+			}
+			#l3
+			{
+				margin-left:150px;
+				font-size:24pt;
+				spacing:32px;
+				line-height:105px;
+			}
+			#sbt
+			{
+				color:#C71585;
+				font-size:20px;
+				padding:8px;
+				margin-left:30%;
+				width:100px;
+				height:45px;
+				border:solid 3px;
+			}
+			#btn
+			{
+				color:#C71585;
+				font-size:20px;
+				padding:8px;
+				margin-left:25%;
+				border:solid 3px;
+				width:100px;
+				height:45px;
+			}
+			#sems
+			{
+				font-size:16px; height:30px; width:130px;
+			}
+			#mont
+			{
+				font-size:16px; height:30px; width:130px;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="tit">
+			<i style="margin-left:20px">View<i style="margin-left:180px">Attendence</i></i>
+		</p>
+		<div>
+			<form action="pview.php" method="post">
+				<a href="mainmenu.htm" id="btn1">Home</a>
+				<label id="l1">Semester :  </label>
+				<select name="sems" id="sems">
+					<option value="select">--Select--</option>
+					<option value="1y">1 st Year</option>
+					<option value="3y">3 rd Sem</option>
+					<option value="4y">4 th Sem</option>
+					<option value="5y">5 th Sem</option>
+					<option value="6y">6 th Sem</option>
+				</select>
+				<br/>
+				<label id="l2">Shift :   </label>
+				<select style="font-size:16px; height:30px; width:130px;" name="shift">
+					<option value="select">--Select--</option>
+					<option value="1t">1 st Shift</option>
+					<option value="2n">2 nd Shift</option>
+				</select>
+				<br/>
+				<label id="l3">Month :   </label>
+				<select name="mont" id="mont">
+					<option value="select">--Select--</option>
+					<option value="jan">January</option>
+					<option value="feb">February</option>
+					<option value="mar">March</option>
+					<option value="apr">April</option>
+					<option value="may">May</option>
+					<option value="jun">June</option>
+					<option value="jul">July</option>
+					<option value="aug">August</option>
+					<option value="sep">September</option>
+					<option value="oct">October</option>
+					<option value="nov">November</option>
+					<option value="dec">December</option>
+				</select> 
+				<br/>
+				<input type="submit" value="Sumbit" id="sbt" name="submit">
+				<input type="reset" value="Clear" id="btn" name="reset">
+			</form>
+		</div>
+	</body>
+</html>

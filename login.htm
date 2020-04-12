@@ -1,0 +1,73 @@
+<html>
+<head>
+<title> Admin Login </title>
+<style>
+body
+{
+background:#FFFAF0;
+background-image:url(tsp.jpg);
+background-size:150px 150px;
+background-repeat:no-repeat;
+background-position:620px 85px;
+}
+#from
+{
+border:ridge violet 5px;
+width:30%;
+border-radius:10px;
+margin:230px 470px 300px;
+background:#E6E6FA;
+font-size:26px;
+margin-bottom:150px;
+}
+#tit
+{
+color:#DC143C;
+font-family:"Monotype Corsiva";
+font-size:50px;
+margin-left:400px;
+font-style:underline;
+margin-bottom:100px;
+}
+#sbt
+{
+color:#fff;
+background:#337ab7;
+font-size:20px;
+padding:6px;
+margin-left:10%;
+}
+#btn
+{
+color:#fff;
+background:#337ab7;
+font-size:20px;
+padding:6px;
+margin-left:30%
+}
+
+</style>
+</head>
+<body>
+<p id="tit">
+<u>
+SMART Attendence Management
+</u>
+</p>
+<div id="from">
+<form action="plogin.php" method="post">
+<p>
+<label>User Name : </label>
+<input type ="text" id="user" name="username">
+</p>
+<p>
+<label>Password : </label>
+<input type="password" id="pass" name="password"></p>
+
+<input type="submit" id="sbt" value="LOGIN" name="login"> 
+<input type="reset" id="btn" value="RESET">
+
+</form>
+</div>
+</body>
+</html>
